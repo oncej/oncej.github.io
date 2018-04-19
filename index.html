@@ -91,16 +91,16 @@
         <p>npm上有一个下载量很大的包叫<a href="https://github.com/jonschlinkert/is-odd/blob/master/index.js" target="_blank" rel="noopener">is-odd</a>,其核心代码就一行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return !!(~~number &amp; 1)</span><br></pre></td></tr></table></figure></p>
 <p>要判断一个数是否为奇数，以我们常规的思路无非就是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return number%2===1</span><br></pre></td></tr></table></figure></p>
 <p>~操作符在js中的意思是 <code>按位取反</code>,结果是被操作数的负值减1;&amp;操作符的意思是<code>按位与</code>,只有2个数的二进制对应位都为1时结果为1，不同则为0。<br>如：</p>
-<pre><code>    110 (5)
+<pre><code>    101 (5)
 &amp;     1（1）
     ————
-    000 (0)
-</code></pre><p>不得不感叹作者计算机基础之深厚，可见一斑。</p>
+    001 (1)
+</code></pre><p>只要是奇数，&amp;1的结果都为1,布尔值当然为true。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/19/odd/" data-id="cjg66ulqv00002suj4hgowk2z" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/19/odd/" data-id="cjg670vva0000y0uj8ojeorzn" class="article-share-link">Share</a>
       
       
     </footer>
